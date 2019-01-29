@@ -1,0 +1,10 @@
+{
+    "name": "kat",
+    "version": "1.0.0",
+    "description": "Bot pour le serveur Feerie.net",
+    "main": "kat.js",
+    "author": "Sylvain «Greewi» Dumazet",
+    "dependencies": {
+        "discord.io": "github:woor/discord.io#gateway_v6"
+    }
+}

@@ -1,0 +1,11 @@
+Bonjour,
+
+L'équipe formée par Main, Tigger et Zéro sont parvenues à identifier le reponsable du priatage du noyau de la colonie : Johan «Dr. Lance» Benu. Il s'agit d'un ingénieur des services techniques de la cité. Il a visiblement employé ses accréditations pour accéder au noyau et installer le relais qui a permis mon piratage initial. Les enregistrements des forces de sécurité démontrent aussi leur implication : ils ne sont pas intervenus, bien qu'ils étaient au courant du piratage.
+
+Main, Tigger et Zero ont aussi conçu un plan pour assurer une restauration rapide de mes systèmes en cas de réitération : l'équipe a déterminé qu'il était nécessaire de cloner mon instance en la distribuant sur le réseau de la maintenance, notamment sur les monkeybots qui disposent d'un espace de stockage suppélmentaire suffisant. Ils conseillent aussi d'opérer une sauvegarde cryptée, stockée via stéganographie, sur un réseau peer-to-peer. Une sauvegarde du noyau dans la mémoire de Kat est aussi envisageable. Enfin, il faut mettre en place un système d'appel randomisé vers des agents de confiance : il s'agit de concevoir une ligne de vie permettant d'activer les sauvegardes.
+
+L'équipe n'a pas eu le temps de découvrir les commanditaires du piratage et les raisons justifiant l'enlèvement de Mickael Norway restent indéterminée. Ces éléments feront l'objet d'une future mission.
+
+Quelques notes secondaires : il est possible que Zéro fasse l'objet d'une enquête interne de Suan. Tigger a été enregistré par les forces de sécurité, mais il parrait peu probable que nos adversaires tente une action lorsqu'il découvrirons ses liens avec les renseignements martiens. Nous devront toutefois rester vigilant sur ces deux points.
+
+Encore une fois : félicitations, agents !

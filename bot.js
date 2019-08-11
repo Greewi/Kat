@@ -153,7 +153,9 @@ class Bot {
 /**
  * Affiche l'aide et quitte l'application
  */
-const usageEtQuitter = () => {
+const usageEtQuitter = (message) => {
+    if(message)
+        console.log(message);
     console.log("USAGE : node bot.js BOT ACTION PARAMETRES");
     console.log("Liste des actions :");
     console.log("\tmessage CANAL FICHIER : envoie un message sur le canal en le lisant depuis le fichier indiqué");
@@ -167,24 +169,24 @@ let parametres = process.argv;
 // Sélection du bot
 let idBot = parametres[2];
 if (!idBot || !config.bots[idBot])
-    usageEtQuitter();
+    usageEtQuitter("Pas de bot sélectionné");
 let configBot = config.bots[idBot];
 let bot = new Bot(configBot);
 
 // Récupération de l'action
 let action = parametres[3];
 if (!action)
-    usageEtQuitter();
+    usageEtQuitter("Pas d'action");
 
 switch (action) {
     case "message": {
         let idCanal = parametres[4];
         if (!idCanal || !config.canaux[idCanal])
-            usageEtQuitter();
+            usageEtQuitter("Pas de canal (Il faut le mettre entre guillement à cause du #)");
         let canal = config.canaux[idCanal]
         let fichierMessage = parametres[5];
         if (!fichierMessage)
-            usageEtQuitter();
+            usageEtQuitter("Fichier du message non trouvé");
         bot.connecte().then(() => {
             fs.readFile(fichierMessage, "utf8", function (err, data) {
                 if (err) {
@@ -198,8 +200,8 @@ switch (action) {
     }
     case "watch": {
         let idCanal = parametres[4];
-        if (parametres.length < 5)
-            usageEtQuitter();
+        if (idCanal === undefined)
+            usageEtQuitter("Pas de canal (Il faut le mettre entre guillement à cause du #)");
         bot.connecte().then(() => {
             for (let i = 4; i < parametres.length; i++) {
                 if (config.canaux[parametres[i]])
@@ -214,8 +216,3 @@ switch (action) {
         usageEtQuitter();
     }
 }
-
-
-
-
-
